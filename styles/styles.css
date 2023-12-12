@@ -43,6 +43,10 @@
 
 /*base*/
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
@@ -51,12 +55,31 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
 
 ul {
   list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 /*buttom*/
 .button {
@@ -84,6 +107,15 @@ ul {
   font-weight: 600;
 }
 
+.section {
+  padding: 48px 0;
+}
+
+/*hero-section*/
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   font-weight: 900;
@@ -93,6 +125,10 @@ ul {
 
 .hero-title .accent {
   color: var(--color-brand-light);
+}
+
+.advantages-section {
+  padding: 40px 0 20px;
 }
 
 .advantages-list {
