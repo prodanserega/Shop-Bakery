@@ -53,6 +53,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 
 h1,
@@ -81,6 +82,11 @@ ul {
   height: 1px;
   overflow: hidden;
 }
+.conteiner {
+  width: 100%;
+  max-width: 1288px;
+  margin: auto;
+}
 /*buttom*/
 .button {
   font-weight: 600;
@@ -89,6 +95,7 @@ ul {
   background: var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -150,6 +157,15 @@ ul {
   color: var(--color-brand-dark);
 }
 /*traditions section*/
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.traditions-section {
+  padding-top: 96px;
+}
+
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -159,15 +175,21 @@ ul {
   text-transform: uppercase;
 }
 /*Chef section*/
-
+.chefs-title {
+  margin-bottom: 80px;
+}
 .chef-title {
   font-size: 40px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 /*formats-section*/
+.formas-tatile {
+  margin-bottom: 80px;
+}
 
-.formats-title {
+.format-title {
   color: var(--color-primary-light);
   font-size: 40px;
   font-weight: 600;
@@ -180,6 +202,9 @@ ul {
 }
 
 /*contacts-section*/
+.contacts-title {
+  margin-bottom: 16px;
+}
 
 /*footer*/
 
