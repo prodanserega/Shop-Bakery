@@ -203,6 +203,22 @@ ul {
 .traditions-text .uppercase {
   text-transform: uppercase;
 }
+
+.traditions-conteiner{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  
+}
+
+.traditions-text.limited{
+  max-width: 330px;
+}
+
+.tradtion-content{
+  max-width: 710px;
+}
+
 /*Chef section*/
 .chefs-title {
   margin-bottom: 80px;
@@ -214,7 +230,7 @@ ul {
 }
 
 /*formats-section*/
-.formas-tatile {
+.formats-tatle {
   margin-bottom: 80px;
 }
 
@@ -222,12 +238,28 @@ ul {
   color: var(--color-primary-light);
   font-size: 40px;
   font-weight: 600;
+  
 }
 
 .formats-text {
   color: var(--color-primary-light);
   font-size: 14px;
   font-weight: 300;
+}
+
+.format-card{
+border: 1px solid lightgray;
+border-radius: 16px;
+padding: 24px;
+}
+
+.formats-list{
+  display: flex;
+  gap: 20px;
+}
+
+.formats-item{
+  flex-basis:calc(100%/3);
 }
 
 /*contacts-section*/
