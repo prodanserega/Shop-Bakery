@@ -144,7 +144,10 @@ ul {
 /*hero-section*/
 .hero-section {
   padding: 272px 0;
-  background-image: url(/images/);
+  background-image: url('../images/couple-in-bakery.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 .hero-title {
@@ -247,6 +250,7 @@ ul {
   border: 1px solid lightgray;
   border-radius: 16px;
   padding: 24px;
+ 
 }
 
 .formats-list {
