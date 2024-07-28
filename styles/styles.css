@@ -115,37 +115,36 @@ ul {
 
 .link:hover {
   color: var(--color-brand-light);
-  
 }
 
 .section {
   padding: 48px 0;
 }
 
-.header-conteiner{
+.header-conteiner {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-.header-nav{
+.header-nav {
   display: flex;
   align-items: center;
   flex-grow: 1;
   gap: 40px;
 }
 
-.header-menu{
+.header-menu {
   display: flex;
-  gap:64px;
+  gap: 64px;
   flex-grow: 1;
   justify-content: center;
 }
 
-
 /*hero-section*/
 .hero-section {
   padding: 272px 0;
+  background-color: burlywood;
 }
 
 .hero-title {
@@ -168,7 +167,6 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  
 }
 
 .advantages-item {
@@ -204,18 +202,17 @@ ul {
   text-transform: uppercase;
 }
 
-.traditions-conteiner{
+.traditions-conteiner {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  
 }
 
-.traditions-text.limited{
+.traditions-text.limited {
   max-width: 330px;
 }
 
-.tradtion-content{
+.tradtion-content {
   max-width: 710px;
 }
 
@@ -238,7 +235,6 @@ ul {
   color: var(--color-primary-light);
   font-size: 40px;
   font-weight: 600;
-  
 }
 
 .formats-text {
@@ -247,19 +243,19 @@ ul {
   font-weight: 300;
 }
 
-.format-card{
-border: 1px solid lightgray;
-border-radius: 16px;
-padding: 24px;
+.format-card {
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  padding: 24px;
 }
 
-.formats-list{
+.formats-list {
   display: flex;
   gap: 20px;
 }
 
-.formats-item{
-  flex-basis:calc(100%/3);
+.formats-item {
+  flex-basis: calc(100% / 3);
 }
 
 /*contacts-section*/
