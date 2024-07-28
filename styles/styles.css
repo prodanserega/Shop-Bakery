@@ -40,6 +40,7 @@
   --color-brand-dark: #465929;
   --color-brand-normal: #819b57;
   --color-brand-light: #cfcfbc;
+  --color-secondary-dark: #a28268;
 }
 
 /*base*/
@@ -49,6 +50,7 @@
 }
 
 body {
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -243,6 +245,13 @@ ul {
   width: 352px;
   border: 2px solid var(--color-brand-light);
 }
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+}
+
 /*formats-section*/
 .formats-tatle {
   margin-bottom: 80px;
