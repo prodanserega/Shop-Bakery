@@ -321,3 +321,12 @@ ul {
   background-size: cover;
   background-position: center;
 }
+
+.address-icon {
+  fill: var(--color-primary-light);
+}
+
+
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
