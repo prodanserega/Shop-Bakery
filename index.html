@@ -75,40 +75,49 @@
             <h2 class="chefs-title section-title centered">
             Наші найкращі <span class="accent">шеф-кухарі</span>
           </h2> 
-          <ul >
-            <li>
-              <article>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img class="chef-photo" src="./images/chef-nastia.jpg" alt="Шеф-повар дівчина" />
-                <h3 class="chef-title">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
-              </article>
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <p class="chef-text">Привіт, я Настя!</p>
+                  <p class="chef-text">
+                     Вже 10 років, я втілюю <br/>
+                     у життя цікаві та смачні ідеї.</p>
+                  <p class="chef-text">
+                     Я випічу для вас <br/>
+                     найсмачніщі вироби!</p>
+                </div>
+              </article class="chef-card">
             </li>
-            <li>
-              <article>
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img class="chef-photo" src="./images/chef-vlad.jpg" alt="Шеф-повар хлопець" />
-                <h3 class="chef-title">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
-                  любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <div>
+                  <h3 class="chef-title">Влад</h3>
+                  <p class="chef-text">Привіт, я Влад!</p>
+                  <p class="chef-text">
+                    Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
+                    любов, з якою ми ділимось кожен раз з Вами через нашу випічку!
+                  </p>
+                  <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
         </div>
         </section>
         <section class="section" id="formats-section">
-          <div class="conteiner">
-            <h2 class="formats-tatle section-title centered">Формати</h2>
-            <button class="carousel-button" type="buttom">
+        <div class="conteiner">
+          <h2 class="formats-tatle section-title centered">Формати</h2>
+          <div class="formats-conteiner">
+           <button class="carousel-button" type="buttom">
               <svg class="carousel-arraw" width="16px" height="16px">
                 <use href="./images/symbol-defs.svg#icon-Arrow-right"></use>
               </svg>
-            </button>
-          <ul class="formats-list">
+           </button>
+           <ul class="formats-list">
             <li class="formats-item">
               <article class="format-card">
                 <!--<img src="/images/Walrus.jpg" alt="Walrus" />-->
@@ -145,21 +154,26 @@
                 </div>
               </article>
             </li>
-          </ul>
-          <button class="carousel-button" type="buttom">
+           </ul>
+           <button class="carousel-button" type="buttom">
             <svg class="carousel-arraw" width="16px" height="16px">
               <use href="./images/symbol-defs.svg#icon-Arrow-right"></use>
             </svg>
-          </button>
+           </button>
+          </div>
         </div> 
         </section>
-        <section class="section" id="contacts-section">
+        <section class="contacts-section section " id="contacts-section">
           <div class="conteiner">
-            <h2 class="contacts-title section-title">
+          <div class="contact-conteiner">
+          <div class="contact-form">
+           <h2 class="contacts-title section-title">
             Приєднуйся до мережі пекарень
-          </h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+           </h2>
+           <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+          </div>
           <iframe
+            class="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640531314047!2d30.491233500000003!3d50.4566697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1701803869028!5m2!1sen!2sua"
             width="603"
             height="595"
@@ -167,6 +181,7 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+        </div>
         </div>  
         </section>
       </main>

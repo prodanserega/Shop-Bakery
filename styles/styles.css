@@ -213,6 +213,10 @@ ul {
   text-transform: uppercase;
 }
 
+.traditions-text:not(:last-child) {
+  margin-bottom: 42px;
+}
+
 .traditions-conteiner {
   display: flex;
   justify-content: space-between;
@@ -246,12 +250,28 @@ ul {
   border: 2px solid var(--color-brand-light);
 }
 
+.chefs-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chefs-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-secondary-dark);
 }
-
+.chef-text:not(:last-child) {
+  margin-bottom: 25px;
+}
 /*formats-section*/
 .formats-tatle {
   margin-bottom: 80px;
@@ -259,7 +279,7 @@ ul {
 
 .carousel-button {
   display: flex;
-  
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -275,11 +295,11 @@ ul {
   fill: var(--color-primary-dark);
 }
 
-.carousel-button:hover{
+.carousel-button:hover {
   background-color: var(--color-primary-dark);
 }
 
-.carousel-button:hover .carousel-arraw{
+.carousel-button:hover .carousel-arraw {
   fill: var(--color-primary-light);
 }
 
@@ -287,6 +307,12 @@ ul {
   color: var(--color-primary-light);
   font-size: 40px;
   font-weight: 600;
+}
+
+.formats-conteiner {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
 .formats-text {
@@ -318,8 +344,24 @@ ul {
 }
 
 /*contacts-section*/
+
+.contacts-section{
+  padding-bottom: 96px;
+}
+
 .contacts-title {
   margin-bottom: 16px;
+}
+
+.contact-conteiner {
+  display: flex;
+  gap: 32px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 16px;
 }
 
 /*footer*/
