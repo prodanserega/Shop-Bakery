@@ -45,7 +45,9 @@
 
 /*base*/
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -67,6 +69,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 address {
@@ -252,7 +258,7 @@ ul {
 
 .chefs-list {
   display: flex;
-  gap: 30px;
+  gap: 40px 30px;
 }
 
 .chefs-item {
@@ -345,7 +351,7 @@ ul {
 
 /*contacts-section*/
 
-.contacts-section{
+.contacts-section {
   padding-bottom: 96px;
 }
 
@@ -365,6 +371,28 @@ ul {
 }
 
 /*footer*/
+
+.footer-conteiner {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
 
 .address-link {
   color: var(--color-primary-light);
@@ -388,6 +416,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 32px;
 }
 
 .address-icon {
