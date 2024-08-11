@@ -239,6 +239,7 @@ ul {
 
 /*Chef section*/
 .chefs-title {
+  position: relative;
   max-width: 535px;
   margin: 0 auto 80px;
 }
@@ -254,6 +255,18 @@ ul {
   content: '';
   width: 352px;
   border: 2px solid var(--color-brand-light);
+}
+
+.chefs-title::before {
+  position: absolute;
+  left: -360px;
+  bottom: 24px;
+}
+
+.chefs-title::after {
+  position: absolute;
+  right: -360px;
+  bottom: 24px;
 }
 
 .chefs-list {
