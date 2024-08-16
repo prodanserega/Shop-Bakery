@@ -1,0 +1,20 @@
+.formats-section {
+  &__tatle {
+    margin-bottom: 80px;
+  }
+
+  &__conteiner {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3);
+  }
+}
