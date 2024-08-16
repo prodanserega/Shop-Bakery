@@ -1,189 +1,31 @@
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'),
-    url('../fonts/poppins-v20-latin-300.ttf') format('truetype');
-}
+@import './utils/fonts';
 
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-    url('../fonts/poppins-v20-latin-regular.ttf') format('truetype');
-}
+@import './utils/variables';
 
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
-    url('../fonts/poppins-v20-latin-600.ttf') format('truetype');
-}
+@import './base';
 
-@font-face {
-  font-display: swap;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'),
-    url('../fonts/poppins-v20-latin-900.ttf') format('truetype');
-}
+@import './utils/utils';
 
-:root {
-  --color-primary-dark: #31261a;
-  --color-primary-light: #faf4ea;
-  --color-brand-dark: #465929;
-  --color-brand-normal: #819b57;
-  --color-brand-light: #cfcfbc;
-  --color-secondary-dark: #a28268;
-}
-
-/*base*/
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--color-primary-light);
-  color: var(--color-primary-dark);
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-a {
-  display: inline-block;
-}
-
-address {
-  font-style: normal;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
 .conteiner {
   width: 100%;
   max-width: 1288px;
   margin: auto;
-}
-/*buttom*/
-.button {
-  font-weight: 600;
-  color: var(--color-primary-light);
-  border: 2px solid var(--color-brand-normal);
-  background: var(--color-brand-normal);
-  border-radius: 8px;
-  cursor: pointer;
-  padding: 16px 32px;
-}
-
-/* header */
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 32px;
-}
-
-.button:hover {
-  background-color: transparent;
-  color: var(--color-brand-dark);
-}
-
-.link {
-  color: var(--color-primary-light);
-  transition: color 0.3s;
-
-  text-decoration: none;
-}
-
-.link:hover {
-  color: var(--color-brand-normal);
 }
 
 .section {
   padding: 48px 0;
 }
 
-.header-conteiner {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
-
-.header-menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
-}
+/*buttom*/
+@import './components/buttons';
+@import './components/links';
+/* header */
+@import './components/header';
 
 /*hero-section*/
-.hero-section {
-  padding: 272px 0;
-  background-image: linear-gradient(
-      102.76deg,
-      rgba(18, 18, 17, 0.78) 2.03%,
-      rgba(18, 18, 17, 0.6) 58.46%,
-      rgba(18, 18, 17, 0) 90.36%
-    ),
-    url('../images/couple-in-bakery.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-}
+@import './components/hero-section';
 
-.hero-title {
-  color: var(--color-primary-light);
-  font-weight: 900;
-  text-align: center;
-  font-size: 128px;
-}
-
-.hero-title .accent {
-  color: var(--color-brand-normal);
-}
+/*advantages*/
 
 .advantages-section {
   padding: 16px 0;
@@ -343,8 +185,9 @@ ul {
 
 .format-title {
   color: var(--color-primary-light);
-  font-size: 40px;
+  font-size: 24px;
   font-weight: 600;
+  margin-bottom: 16px;
 }
 
 .formats-conteiner {
@@ -360,6 +203,10 @@ ul {
 }
 
 .format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 444px;
   border: 1px solid lightgray;
   border-radius: 16px;
@@ -375,6 +222,15 @@ ul {
 
 .format-card:hover {
   transform: scale(1.05);
+}
+
+.format-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .formats-list {
