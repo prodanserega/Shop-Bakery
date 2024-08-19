@@ -1,18 +1,27 @@
 .contacts-section {
   padding-bottom: 96px;
-}
 
-.contacts-title {
-  margin-bottom: 16px;
-}
+  &__title {
+    margin-bottom: 16px;
+  }
 
-.contact-conteiner {
-  display: flex;
-  gap: 32px;
-}
+  &__conteiner {
+    display: flex;
+    gap: 32px;
+  }
 
-.contact-map {
-  flex-shrink: 0;
-  border: 0;
-  border-radius: 16px;
+  &__map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 16px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin: 0 auto 24px;
+    display: block;
+  }
 }

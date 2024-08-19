@@ -1,40 +1,39 @@
-.form-field {
-  margin-bottom: 32px;
+.imput {
+  position: relative;
+
+  &__lable {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    background-color: transparent;
+
+    &:focus {
+      border-color: var(--color-brand-normal);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-secondary-dark);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
 }
 
-.form-lable {
-  display: block;
-}
 
-.form-input {
-  padding: 16px 42px;
-  width: 100%;
-  font-size: 16px;
-  line-height: 1.17;
-  border: 1px solid var(--color-secondary-dark);
-  border-radius: 8px;
-  background-color: transparent;
-}
-
-.form-input:focus {
-  border-color: var(--color-brand-normal);
-  outline: none;
-}
-
-.form-input::placeholder {
-  color: var(--color-secondary-dark);
-  font-size: 16px;
-  line-height: 1.17;
-}
-
-.form-input:focus::placeholder {
-  color: var(--color-primary-dark);
-}
-
-.form-button {
-  margin: 0 auto 24px;
-  display: block;
-}
 
 .form-terms {
   max-width: 220px;
@@ -43,9 +42,11 @@
   line-height: 1.5;
   text-align: center;
   margin: 0 auto;
-}
 
-.form-terms-link {
+  &__link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+}
+
+

@@ -1,8 +1,4 @@
 .formats-section {
-  &__tatle {
-    margin-bottom: 80px;
-  }
-
   &__conteiner {
     display: flex;
     gap: 32px;
@@ -11,10 +7,11 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
   }
 
   &__item {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100%-40%) / 3);
   }
 }

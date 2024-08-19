@@ -14,30 +14,30 @@
     var(--color-primary-dark) 100%
   );
   transition: transform 0.5s;
-}
 
-.format-card:hover {
-  transform: scale(1.05);
-}
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
-.format-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+  &:hover {
+    transform: scale(1.05);
+  }
 
-.format-title {
-  color: var(--color-primary-light);
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
+  &__title {
+    color: var(--color-primary-light);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
 
-.formats-text {
-  color: var(--color-primary-light);
-  font-size: 14px;
-  font-weight: 300;
+  &__text {
+    color: var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 300;
+  }
 }
