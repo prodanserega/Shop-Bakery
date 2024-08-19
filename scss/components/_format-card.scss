@@ -14,6 +14,7 @@
     var(--color-primary-dark) 100%
   );
   transition: transform 0.5s;
+  overflow: hidden;
 
   &__image {
     position: absolute;
