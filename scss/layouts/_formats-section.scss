@@ -1,8 +1,6 @@
 .formats-section {
   &__conteiner {
-    display: flex;
-    gap: 32px;
-    align-items: center;
+    overflow: hidden;
   }
 
   &__list {
@@ -12,7 +10,9 @@
   }
 
   &__item {
-    flex-basis: calc((100%-40%) / 3);
+   display: flex;
+    gap: 32px;
+    align-items: center;
   }
 }
  
