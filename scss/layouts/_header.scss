@@ -6,26 +6,39 @@
   padding-top: 32px;
 
   &__conteiner {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__button{
+    @media screen and (max-width: 1200px){
+      display: none;
+    }
+  }
+
+  &__burger{
+    display: none;
+    @media screen and (max-width: 1200px){
+      display: block;
+    }
+  }
 }
-
-&__nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  gap: 40px;
-}
-
-&__menu {
-  display: flex;
-  gap: 64px;
-  flex-grow: 1;
-  justify-content: center;
-}
-}
-
-
-
-
