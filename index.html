@@ -11,7 +11,7 @@
   <body>
       <header class="header">
         <div class="conteiner">
-          <dev class="header__conteiner">
+          <div class="header__conteiner">
         <nav class="header__nav">
           <a href="/"
             ><img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
@@ -26,12 +26,15 @@
           </ul>
         </nav> 
         <button class="header__button button modal-btn-open" type="button">Замовити дзвінок</button>
-        <button class="header__burger" type="button">
+        <button class="header__burger menu-btn-open" type="button">
           <svg class="" width="24px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-menu"></use>
           </svg>
-            </button>
-      </dev> 
+        </button>
+        <div class="mobile-menu ">
+          <button class="mobile-menu__btn-close  menu-btn-close" type="button">Close</button>
+        </div>
+      </div> 
     </div>
       </header>
       <main>
@@ -40,6 +43,7 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
         </div>
         </section>
         <section class="advantages-section">
@@ -71,7 +75,7 @@
             А ще у наших пекарень стильний дизайн та висока якість обслуговування!
           </p>
         </div>
-          <img
+          <img class="traditions-section_image"
             src="./images/chef.jpg"
             alt="Чоловік пекар дивиться на батони із посмішкою"
           />
@@ -297,5 +301,6 @@
         </div>
       </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

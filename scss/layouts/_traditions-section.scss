@@ -19,6 +19,10 @@
       max-width: 330px;
     }
   }
+
+  &_image{
+    border-radius: 400px 400px 0 0;
+  }
 }
 
 /*.traditions-text:not(:last-child) {
