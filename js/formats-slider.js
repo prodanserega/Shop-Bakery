@@ -3,21 +3,23 @@ const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    480: {
+    768: {
       slidesPerView: 2,
     },
 
-    768: {
-      slidesPerView: 4,
+    1280: {
+      slidesPerView: 3,
     },
   },
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.pagination',
+    bulletClass: 'pagination__button',
+    bulletActiveClass: 'pagination__button--active',
   },
 
   navigation: {
-    nextEl: '.swiper-button.next',
-    prevEl: '.swiper-button.prev',
+    nextEl: '.carousel-button.next',
+    prevEl: '.carousel-button.prev',
   },
 });
