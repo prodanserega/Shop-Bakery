@@ -22,9 +22,9 @@
   }
 
   &__map {
+    flex-shrink: 0;
     height: 176px;
     margin: 0 -24px;
-    flex-shrink: 0;
     border: none;
     border-radius: 16px;
 
