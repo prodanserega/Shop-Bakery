@@ -32,12 +32,16 @@
     align-items: center;
     justify-content: center;
     padding: 0;
-    fill: transparent;
-    stroke: var(--color-primary-dark);
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
+
+  &__icon{
+    fill: var(--color-primary-dark);
+  }
+
+
 
   &__logo {
     margin-bottom: 32px;
