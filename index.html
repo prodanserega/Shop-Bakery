@@ -34,14 +34,14 @@
         </button>
         <div class="mobile-menu ">
            <nav class="mobile-menu__nav">
-          <a class="mobile-menu__logo " href="/"
+          <a class="mobile-menu__logo menu-btn-close" href="/"
             ><img src="./images/logo-menu.svg" alt="Логотип сучасної пекарні" />
           </a>
           <ul class="mobile-menu__list">
-            <li><a class="link mobile-menu__link" href="#traditions-section">Наші традиції</a></li>
-            <li><a class="link mobile-menu__link" href="#chef-section">Шеф-кухарі</a></li>
-            <li><a class="link mobile-menu__link" href="#formats-section">Формати</a></li>
-            <li><a class="link mobile-menu__link" href="#contacts-section">Контакти</a></li>
+            <li><a class="link mobile-menu__link menu-btn-close" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="link mobile-menu__link menu-btn-close" href="#chef-section">Шеф-кухарі</a></li>
+            <li><a class="link mobile-menu__link menu-btn-close" href="#formats-section">Формати</a></li>
+            <li><a class="link mobile-menu__link menu-btn-close" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav> 
           <button class="mobile-menu__btn-close  menu-btn-close" type="button">
@@ -340,7 +340,10 @@
       </footer>
       <div class="backdrop  is-hidden">
         <div class="modal">
-          <button class="modal__btn-close modal-btn-close" type="buttom">Close</button>
+          <button class="modal__btn-close modal-btn-close" type="buttom">
+            <svg class="modal__icon" width="18" height="18" >
+                <use href="/images/symbol-defs.svg#icon-close"></use>
+            </svg></button>
           <h2 class="section__title modal__title">Замовити дзвінок</h2>
           <p class="modal__text">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
           <form name="contact-form" autocapitalize="off" >
